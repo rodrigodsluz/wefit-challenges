@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   :root {
     --color-bg: #E5E5E5;
+    --color-box-bg: #FFFFFF;
     --color-button-bg: #40D9B8;
     --color-input-text: #909090;
     --color-list-item-text: #606060;
@@ -24,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-      background-color: var(--color-background);
+      background-color: var(--color-bg);
   }
 
   #root {

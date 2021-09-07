@@ -15,7 +15,7 @@ export const TodoListItemContainer = styled.li<Props>`
   justify-content: space-between;
   align-items: center;
   opacity: 0;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   transform: translateY(25%);
 
   ${props =>

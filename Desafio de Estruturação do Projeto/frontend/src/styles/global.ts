@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     --color-list-item-text: #606060;
     --color-box-list-item-bg: #EEEEEE;
     --color-box-empty-list-bg: #F2F2F2;
+    --color-box-empty-list-border: #CCCCCC;
   }
 
   * {

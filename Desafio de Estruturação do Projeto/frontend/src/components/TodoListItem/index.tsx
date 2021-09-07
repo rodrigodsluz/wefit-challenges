@@ -1,4 +1,3 @@
-/* eslint-disable react/no-array-index-key */
 import React, { useEffect, useRef, useState } from 'react';
 import { TodoListItemContainer } from './styles';
 import deleteIcon from '../../assets/ic-delete@2x.png';

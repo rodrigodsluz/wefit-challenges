@@ -1,6 +1,7 @@
 import React from 'react';
 import { TodoListContainer } from './styles';
 import TodoListItems from '../TodoListItem';
+import TodoEmptyList from '../TodoEmptyList';
 
 type Props = {
   todoItems: Array<string>;
@@ -20,7 +21,7 @@ const TodoList = ({ todoItems, handleDeleteTodo }: Props): JSX.Element => (
         ))}
       </ul>
     ) : (
-      <div>eae</div>
+      <TodoEmptyList/>
     )}
   </TodoListContainer>
 );

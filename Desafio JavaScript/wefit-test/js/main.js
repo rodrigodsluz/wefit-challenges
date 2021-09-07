@@ -45,6 +45,32 @@ insertBefore(cards[0].offsetParent, cards[3].offsetParent);
 
 insertAfter(cards[2].offsetParent, cards[1].offsetParent);
 
+//--------------------Lista----------------------
+const lists = document.querySelector(".list-group");
+const activeListGroupItem = document.querySelector(".list-group-item.active");
+activeListGroupItem.classList.remove("active");
 
+const newItems = [
+  {
+    content: "Quarto item",
+    classes: ["list-group-item", "active"],
+  },
+  {
+    content: "Quinto item",
+    classes: ["list-group-item"],
+  },
+];
 
+const newListGroupItems = newItems.map((item) => {
+  const { content, classes } = item;
+  const li = document.createElement("li");
+  li.textContent = content;
 
+  if (classes) {
+    const classItem = classes.reduce((currentClasses, newClass) => {
+      return (currentClasses += `${newClass} `);
+    }, "");
+    li.classList = classItem;
+  }
+  lists.appendChild(li);
+});

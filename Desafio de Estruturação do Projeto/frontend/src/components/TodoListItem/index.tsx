@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { TodoListItemContainer } from './styles';
+import { Container } from './styles';
 import deleteIcon from '../../assets/ic-delete@2x.png';
 
 type Props = {
@@ -17,12 +17,12 @@ const TodoListItem = ({ todoItem, handleDeleteTodo }: Props): JSX.Element => {
   }, [itemRef]);
 
   return (
-    <TodoListItemContainer item={listItem} ref={itemRef}>
+    <Container item={listItem} ref={itemRef}>
       {todoItem}
       <button onClick={() => handleDeleteTodo(todoItem)} type="button">
         <img alt="Deletar" src={deleteIcon} />
       </button>
-    </TodoListItemContainer>
+    </Container>
   );
 };
 

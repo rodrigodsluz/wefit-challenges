@@ -1,5 +1,5 @@
 import React from 'react';
-import { TodoListContainer } from './styles';
+import { Container } from './styles';
 import TodoListItems from '../TodoListItem';
 import TodoEmptyList from '../TodoEmptyList';
 
@@ -9,7 +9,7 @@ type Props = {
 };
 
 const TodoList = ({ todoItems, handleDeleteTodo }: Props): JSX.Element => (
-  <TodoListContainer>
+  <Container>
     {todoItems.length ? (
       <ul>
         {todoItems.map((todo, i) => (
@@ -23,7 +23,7 @@ const TodoList = ({ todoItems, handleDeleteTodo }: Props): JSX.Element => (
     ) : (
       <TodoEmptyList/>
     )}
-  </TodoListContainer>
+  </Container>
 );
 
 export default TodoList;

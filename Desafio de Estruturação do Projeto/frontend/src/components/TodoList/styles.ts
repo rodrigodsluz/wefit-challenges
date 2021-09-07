@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const TodoListContainer = styled.div`
+export const Container = styled.div`
   height: 81%;
 
   ul {

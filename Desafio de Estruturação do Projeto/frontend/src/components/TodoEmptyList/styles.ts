@@ -4,7 +4,7 @@ interface Props {
   item: string;
 }
 
-export const TodoEmptyListContainer = styled.div<Props>`
+export const Container = styled.div<Props>`
   background: var(--color-box-empty-list-bg);
   border: 1px dashed var(--color-box-empty-list-border);
   height: 280px;

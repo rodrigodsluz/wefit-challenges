@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { TodoEmptyListContainer } from './styles';
+import { Container } from './styles';
 
 const TodoEmptyList = (): JSX.Element => {
   const [listItem, setlistItem] = useState<string>('');
@@ -11,9 +11,9 @@ const TodoEmptyList = (): JSX.Element => {
   }, [itemRef]);
 
   return (
-    <TodoEmptyListContainer item={listItem} ref={itemRef}>
+    <Container item={listItem} ref={itemRef}>
       <p>Nenhum item cadastrado</p>
-    </TodoEmptyListContainer>
+    </Container>
   );
 };
 

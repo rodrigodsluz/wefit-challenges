@@ -4,7 +4,7 @@ interface Props {
   item: string;
 }
 
-export const TodoListItemContainer = styled.li<Props>`
+export const Container = styled.li<Props>`
   background: var(--color-box-list-item-bg);
   color: var(--color-list-item-text);
   height: 32px;

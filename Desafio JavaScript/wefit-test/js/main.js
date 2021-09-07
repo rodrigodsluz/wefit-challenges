@@ -10,3 +10,12 @@ btns.forEach((btn, i) => {
   if (i >= 1) btn.classList.add("ml-2");
 });
 
+//--------------------Header------------------------
+const header = document.querySelector(".jumbotron");
+header.classList.add("bg-secondary", "text-right", "text-white");
+
+const learnMoreBtn = header.lastElementChild;
+learnMoreBtn.classList.remove("btn-primary");
+learnMoreBtn.classList.add("btn-success");
+
+

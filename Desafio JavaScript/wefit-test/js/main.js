@@ -18,4 +18,33 @@ const learnMoreBtn = header.lastElementChild;
 learnMoreBtn.classList.remove("btn-primary");
 learnMoreBtn.classList.add("btn-success");
 
+//--------------------Cards-------------------------
+const cardTitles = Array.from(document.querySelectorAll(".card-title"));
+const cards = Array.from(document.querySelectorAll(".card"));
+
+cardTitles.forEach((title) => {
+  const closestCard = title.closest("div.card");
+  closestCard.dataset["title"] = title.textContent;
+});
+
+const title = document.querySelector('[data-title="Animais"] .btn');
+title.classList.remove("btn-primary");
+title.classList.add("btn-success");
+
+const insertBefore = (node, newNode) => {
+  const current = node.parentElement;
+  current.insertBefore(newNode, node);
+};
+
+const insertAfter = (node, newNode) => {
+  const current = node.parentElement;
+  current.insertBefore(newNode, node.nextSibling);
+};
+
+insertBefore(cards[0].offsetParent, cards[3].offsetParent);
+
+insertAfter(cards[2].offsetParent, cards[1].offsetParent);
+
+
+
 

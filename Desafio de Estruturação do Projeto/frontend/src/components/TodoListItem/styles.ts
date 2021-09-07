@@ -7,6 +7,7 @@ interface Props {
 export const TodoListItemContainer = styled.li<Props>`
   background: var(--color-box-list-item-bg);
   color: var(--color-list-item-text);
+  height: 32px;
   font-size: 14px;
   margin-bottom: 8px;
   padding: 8px 16px;

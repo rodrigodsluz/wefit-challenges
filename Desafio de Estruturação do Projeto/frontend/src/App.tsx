@@ -1,9 +1,12 @@
 import React from 'react';
+import { GlobalStyle } from './styles/global';
+import Todo from './components/Todo';
 
 const App = (): JSX.Element => (
-  <div>
-    <h1>Hello World</h1>
-  </div>
+  <>
+    <GlobalStyle />
+    <Todo/>
+  </>
 );
 
 export default App;

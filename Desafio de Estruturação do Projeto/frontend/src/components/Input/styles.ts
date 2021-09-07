@@ -28,6 +28,7 @@ export const InputContainer = styled.div`
     justify-content: center;
     border: none;
     cursor: pointer;
+    outline: none;
 
     img {
       height: 24px;

@@ -34,3 +34,4 @@ export const GlobalStyle = createGlobalStyle`
       justify-content: center;
   }
 `;
+

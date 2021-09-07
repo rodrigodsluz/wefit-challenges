@@ -1,10 +1,13 @@
 import React from 'react';
 
 import { Container, TodoContainer } from './styles';
+import Input from '../Input';
 
 const Todo = (): JSX.Element => (
   <Container>
-    <TodoContainer>Hello World</TodoContainer>
+    <TodoContainer>
+      <Input />
+    </TodoContainer>
   </Container>
 );
 
